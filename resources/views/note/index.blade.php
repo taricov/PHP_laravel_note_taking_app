@@ -1,8 +1,11 @@
 <x-default-layout>
 
 
+    @foreach ($notes as $note)
+
     <div>
-        this is from note index
+        {{ $note->note}}
     </div>
+    @endforeach
 
 </x-default-layout>
